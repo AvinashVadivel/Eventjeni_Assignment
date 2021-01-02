@@ -1,0 +1,378 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.blogAlign {
+  width: 95%;
+  margin-left: 15%;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.NavBar {
+  background-color: #021E39;
+  width: 100%;
+  height: 80px;
+  display: flex;
+}
+#hero-full-width {
+  height: 100%;
+  left: 0;
+  position: relative;
+  right: 0;
+  top: 0;
+}
+#hero-full-width img {
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+}
+.checkbox-option {
+  width: 200px;
+  margin-left: 24px;
+}
+.searchBar {
+  position: absolute;
+  top: 200px;
+  left: 150px; 
+   
+  padding: 5px;
+  background-color: #021E39;
+  width: 77%;
+  height: 80px;
+
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  margin-top: 20px;
+  padding-top: 19px;
+  opacity: 0.8;
+}
+.searchBar label {
+  color: white;
+  margin-left: 7%;
+  font-size: xx-large;
+}
+.searchBar input {
+  width: 61%;
+  height: 93%;
+  padding-left: 10px;
+  margin-left: 39px;
+}
+.searchBar button {
+  height: 52px;
+  width: 52px;
+}
+.NavBar .leftSide {
+  flex: 50%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.NavBar .leftFilterSide {
+  flex: 50%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.NavBar .rightSide {
+  font-size: 25px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.NavBar .rightSide input {
+  margin-right: 4px;
+}
+.NavBar .rightFilterSide {
+  flex: 50%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.NavBar .leftSide .links {
+  max-height: 80px;
+}
+.NavBar .leftSide button {
+  display: none;
+  margin-left: 20px;
+}
+.NavBar .leftSide #hidden {
+  display: flex;
+
+}
+.NavBar .leftSide .links a, .NavBar .leftSide .links label{
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  margin-left: 15px;
+  padding: 28px;
+}
+
+.NavBar .rightSide {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 25px;
+}
+.NavBar .rightSide label {
+  color: white;
+}
+.FilterBar {
+  margin-top: 10px;
+  width: 60%;
+  background-color: #f5f5f5;
+  text-align: center;
+  color: black !important;
+}
+.FilterBar label {
+  color: black !important;
+}
+@media only screen and (max-width: 1200px) {
+  .NavBar .leftSide .links a{
+    font-size: 23px;
+    padding: 18px;
+  }
+  .NavBar .rightSide label{
+    font-size: 23px;
+  }
+    
+  #hero-full-width {
+    height: 100%;
+    left: 0;
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  #hero-full-width img {
+    max-width: 106%;
+    vertical-align: middle;
+    border: 0;
+  }
+  .searchBar {
+    top: 143px;
+    left: 150px; 
+    padding: 5px;
+    width: 77%;
+    height: 80px;
+    margin-top: 20px;
+    padding-top: 19px;
+  }
+  .searchBar label {
+    margin-left: 7%;
+    font-size: large;
+  }
+  .searchBar input {
+    width: 61%;
+    height: 93%;
+    padding-left: 10px;
+    margin-left: 39px;
+  }
+  .searchBar button {
+    height: 52px;
+    width: 52px;
+  }
+  .NavBar .leftSide .links label{
+    text-decoration: none;
+    font-size: 23px;
+    margin-left: 15px;
+    padding: 28px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .NavBar {
+    width: 100%;
+  }
+  
+  .NavBar .rightSide label{
+    font-size: 21px;
+  }
+  .NavBar .leftSide .links a{
+    font-size: 21px;
+    padding: 15px;
+  }  
+  .NavBar .leftSide .links label{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+    padding: 28px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .NavBar .leftSide .links a{
+    font-size: 18px;
+    padding: 15px;
+  }
+  
+  .NavBar .rightSide label{
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #hero-full-width {
+    height: 83%;
+  }
+  #hero-full-width img {
+    max-width: 106%;
+  }
+  .searchBar {
+    top: 65px;
+    left: 25px;
+    width: 77%;
+    height: 51px;
+  }
+  .searchBar label {
+    font-size: 13px;
+  }
+  .searchBar input {
+    width: 61%;
+    height: 93%;
+    padding-left: 10px;
+    margin-left: 26px;
+  }
+  .searchBar button {
+    height: 30px;
+    width: 30px;
+  }
+  .NavBar {
+    height: 50px;
+  }
+  .NavBar .leftSide .links label{
+    font-size: 12px;
+    margin-left: 15px;
+    padding: 23px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .NavBar .leftSide .links a{
+    font-size: 14px;
+    padding: 1px;
+  }
+  
+  .NavBar .rightSide label{
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .NavBar .leftSide .links a{
+    font-size: 12px;
+    padding: 8px;
+  }
+  
+  .NavBar .rightSide label{
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .NavBar .leftSide button {
+    display: flex;
+  }
+  .NavBar .leftSide .links {
+    display: none;
+  }
+  
+  .NavBar .leftSide #hidden {
+    position: absolute;
+    left: 0px;
+    top: 232px;
+    height: 230px;
+    max-height: 230px;
+    width: 100%;
+    background-color: #021E39;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .NavBar .leftSide #hidden a {
+    margin: 6px;
+    font-size: 23px;
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .NavBar {
+    width: 103%;
+  }
+  .NavBar .leftSide #hidden {
+    top: 228px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .NavBar {
+    width: 114%;
+  }
+  .NavBar .leftSide #hidden {
+    top: 214px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  
+  .NavBar .leftSide #hidden {
+    top: 166;
+  }
+}
+@media only screen and (max-width: 460px) {
+  
+  .NavBar .leftSide #hidden {
+    top: 198;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .searchBar {
+    top: 30px;
+    left: 25px;
+    width: 77%;
+    height: 48px;
+    padding: 12px;
+  }
+  
+  .NavBar .leftSide #hidden {
+    top: 191;
+  }
+  .searchBar label {
+    display: none;
+  }
+  .searchBar input {
+    width: 61%;
+    height: 116%;
+    padding-left: 10px;
+    margin-left: 26px;
+  }
+  .searchBar button {
+    height: 30px;
+    width: 30px;
+  }
+}

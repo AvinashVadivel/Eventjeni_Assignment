@@ -1,0 +1,63 @@
+.blog_card{
+    /* width: 800px; */
+    padding: 10px;
+}
+.topic_card{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    padding: 20px;
+    width: 60%;
+}
+.span8 {
+    width: 620px;
+}
+.blog_topic h3{
+    color: #09b0da;
+}
+.blog_topic p{
+    color: rgb(95, 93, 93);
+    font-size: 16px;
+}
+.topic_card:hover{
+    background-color: rgba(243, 236, 236, 0.699);
+}
+@media(max-width:1000px){
+    .topic_card {
+        width: 80%;
+    }
+}
+@media(max-width:700px){
+    .topic_card {
+        width: 100%;
+    }
+    .feed-left-column {
+        margin-right: 5px;
+    }
+}
+@media(max-width:200px){
+    .feed-left-column {
+        margin-right: 7px;
+    }
+    .mainDiv {
+        position: fixed;
+    }
+}
+@media(max-width:600px){
+    .show_data .main_data img{
+        width: 400px;
+        height: 250px;
+    }
+    .show_data .main_data iframe{
+        width: 370px;
+        height: 200px;
+    }
+}
+
+.feed-left-column {
+    text-align: center;
+    text-transform: uppercase;
+    width: 93px;
+}
